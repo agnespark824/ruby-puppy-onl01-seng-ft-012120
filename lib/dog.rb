@@ -9,14 +9,18 @@ class Dog
     save
   end
   
-  def all
+  def self.all
     @@all
   end
   
-  def print_all
+  def self.print_all
     @@all.each do |index|
       puts index
     end
+  end
+  
+  def self.clear_all
+    @@all.clear
   end
   
   def save
